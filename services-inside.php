@@ -8,8 +8,6 @@
  */
 get_header(); ?>
 
-
-// NOVO SITE :)
-
+<?php include 'inside-content.php'; ?>
 
 <?php get_footer();

@@ -38,6 +38,8 @@ get_header(); ?>
 
       <?php endwhile; ?>
       <?php endif; ?>
+
+      <div class="blog-pattern" style="background-image: url('<?=get_template_directory_URI()?>/img/src/pattern_2.png')"></div>
     </div>
   </div>
 </section>

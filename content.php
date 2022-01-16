@@ -12,7 +12,7 @@
 
 <? if (is_single()) { ?>
 	
-    //Codigo dentro do post
+<?php include 'inside-content.php'; ?>
     
 <? } else { ?>
 
