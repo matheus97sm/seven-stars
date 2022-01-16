@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  padding: 64px 0 32px;
+
+  .container {
+    display: grid;
+    gap: 64px;
+  }
+}
+
+.footer-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 100px;
+  }
+}
+
+@import './info';

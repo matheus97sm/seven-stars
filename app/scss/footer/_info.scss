@@ -1,0 +1,99 @@
+.footer-info {
+  display: grid;
+  gap: 32px;
+
+  h5 {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  form {
+    display: grid;
+    gap: 16px;
+
+    input:not([type="submit"]),
+    textarea {
+      width: 100%;
+      height: 36px;
+      padding: 8px 16px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      font-size: 1rem;
+
+      &::placeholder {
+        color: #fff;
+        opacity: 0.8;
+      }
+    }
+
+    input[type="submit"] {
+      min-width: 260px;
+      margin-top: 16px;
+      padding: .5rem 2rem;
+      display: inline-block;
+      border: 3px solid $cian;
+      color: $cian;
+      font-size: 1rem;
+      font-weight: bolder;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: transparent;
+      transition: .3s background-color, .3s color;
+
+      &:hover {
+        background-color: $cian;
+        color: $black;
+      }
+    }
+  }
+}
+
+.sitemap ul li a {
+  display: block;
+  padding: 4px 0;
+  color: #fff;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    color: #fff;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: $cian;
+    }
+  }
+}
+
+.footer-contact-social {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: $cian;
+  }
+}
+
+.rodape {
+  p {
+    text-align: center;
+    font-size: 14px;
+  }
+}

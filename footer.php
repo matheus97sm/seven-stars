@@ -31,11 +31,21 @@
       </div>
 
       <div class="footer-contact">
-        <h3>Contact</h3>
+        <h5>Contact</h5>
 
         <div class="footer-contact-info">
-          <a href="tel:555555555" target="_blank">555555555</a>
-          <a href="mailto:contact@sevenstars.com" target="_blank">contact@sevenstars.com</a>
+          <a href="tel:555555555" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#tel"></use>
+            </svg> 
+            <span>555555555</span>
+          </a>
+          <a href="mailto:contact@sevenstars.com" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#mail"></use>
+            </svg> 
+            <span>contact@sevenstars.com</span>
+          </a>
         </div>
 
         <div class="footer-contact-social">

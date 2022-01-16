@@ -1,0 +1,33 @@
+.inside-banner {
+  position: relative;
+  width: 100%;
+  padding: 128px 0;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(180deg, #221C1C, #221C1C00);
+    z-index: -2;
+  }
+
+  &::after {
+    top: unset;
+    bottom: 0;
+    background-image: linear-gradient(0, #221C1C, #221C1C00);
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+}

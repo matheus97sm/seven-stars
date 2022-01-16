@@ -1,13 +1,38 @@
+$yellow: #ffdd00;
+$lightGrey: #DCDCDC;
+$grey: #828282;
+$purple: #45155e;
+$cian: #00cfe5;
+$black: #221c1c;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color: #221C1C;
+  background-color: $black;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: $cian;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
 }
 
 ul,
@@ -20,8 +45,48 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: $lightGrey;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.cta {
+  min-width: 260px;
+  padding: .5rem 2rem;
+  display: inline-block;
+  border: 3px solid $cian;
+  color: $cian;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s background-color, .3s color;
+
+  &:hover {
+    background-color: $cian;
+    color: $black;
+  }
+
+  &.cta-yellow {
+    border-color: $yellow;
+    color: $yellow;
+
+    &:hover {
+      background-color: $yellow;
+      color: $black;
+    }
+  }
+}
 
 @import './scss/header/header';
+@import './scss/home/';
 @import './scss/footer/footer';
 @import './animation';

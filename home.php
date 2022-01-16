@@ -36,15 +36,37 @@ $button_link = get_sub_field('button_link');
     <h2>our reviews</h2>
 
     <div class="reviews-wrapper">
-      <div class="review">
-        <strong>Jhon Doe</strong>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id magna nec nibh tristique porttitor non quis massa. Etiam gravida consequat pharetra.</p>
+      <div class="reviews-carousel">
+        <? query_posts( array( 'post_type' => 'reviews', 'posts_per_page' => '9' ) );  ?>
+        <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
+        <div class="review" data-stars="<?=the_field('stars')?>">
+          <h4><?=the_title()?></h4>
+          <p><?=the_content()?></p>
+
+          <div class="review-stars"></div>
+        </div>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
       </div>
+    </div>
+
+    <div class="reviews-buttons">
+      <button class="reviews-left">
+        <img src="<?=get_template_directory_URI()?>/img/src/arrow.svg" alt="Reviews" />
+      </button>
+      
+      <button class="reviews-right">
+        <img src="<?=get_template_directory_URI()?>/img/src/arrow.svg" alt="Reviews" />
+      </button>
     </div>
   </div>
 </section>
 
-<?php if( have_rows('about') ):
+<?php wp_reset_query();
+if( have_rows('about') ):
 while( have_rows('about') ): the_row(); 
 
 $subtitle = get_sub_field('subtitle');
@@ -121,7 +143,7 @@ $button_link = get_sub_field('button_link');
           <use xlink:href="#rocket"></use>
         </svg>
 
-        <div class="home-services-item-img">
+        <div class="home-services-item-text">
           <h5><?=the_title()?></h5>
           <p><?=the_field('resume')?></p>
         </div>
@@ -138,21 +160,14 @@ $button_link = get_sub_field('button_link');
 <?php endwhile; ?>
 <?php endif; ?>
 
-<?php if( have_rows('blog') ):
-while( have_rows('blog') ): the_row(); 
-
-$subtitle = get_sub_field('subtitle');
-$title = get_sub_field('title');
-$button_name = get_sub_field('button_name');
-$button_link = get_sub_field('button_link');
-?>
-<? query_posts( array( 'post_type' => 'post', 'posts_per_page' => '1', 'cat' => '1' ) );  ?>
+<?php query_posts( array( 'post_type' => 'post', 'posts_per_page' => '1', 'cat' => '1' ) );  ?>
 <?php if ( have_posts() ) : ?>
+
 <section class="home-blog">
   <div class="container">
     <div class="home-blog-title">
-      <h3><?=$subtitle?></h3>
-      <h2><?=$title?></h2>
+      <h3>Last posts</h3>
+      <h2>Blog</h2>
     </div>
 
     <div class="home-blog-wrapper">
@@ -160,9 +175,19 @@ $button_link = get_sub_field('button_link');
 
       <div class="home-blog-card">
         <a href="<?=the_permalink()?>" class="home-blog-img">
+          <div class="home-blog-img-wrapper">
+            <img src="<?=catch_that_image(2)?>" alt="<?=the_title()?>" />
+          </div>
+
           <div class="yellow-frame"></div>
-          <img src="<?=catch_that_image(2)?>" alt="<?=the_title()?>" />
-          <img src="<?=get_template_directory_URI()?>/img/src/pattern_1.png" alt="Seven Stars" class="home-blog-img-pattern" />
+          <div class="yellow-box"></div>
+          <div class="white-box"></div>
+
+          <img 
+            src="<?=get_template_directory_URI()?>/img/src/pattern_1.png" 
+            alt="Seven Stars" 
+            class="home-blog-img-pattern" 
+          />
         </a>
 
         <div class="home-blog-text">
@@ -177,7 +202,7 @@ $button_link = get_sub_field('button_link');
 
           <p><?=the_field('resume')?></p>
 
-          <a href="<?=the_permalink()?>" class="cta cta-cian">
+          <a href="<?=the_permalink()?>" class="cta cta-yellow">
             read more
           </a>
         </div>
@@ -186,11 +211,9 @@ $button_link = get_sub_field('button_link');
       <?php endwhile; ?>
     </div>
 
-    <a href="<?=$button_link?>" class="cta cta-cian"><?=$button_name?></a>
+    <a href="<?=site_url()?>/blog" class="cta cta-cian">All blog posts</a>
   </div>
 </section>
-<?php endif; ?>
-<?php endwhile; ?>
 <?php endif; ?>
 
 <?php get_footer();

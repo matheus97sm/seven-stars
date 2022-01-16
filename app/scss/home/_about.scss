@@ -1,0 +1,30 @@
+.home-about {
+  width: 100%;
+  padding: 64px 0;
+
+  .container {
+    display: grid;
+    gap: 64px;
+  }
+}
+
+.home-about-text {
+  p {
+    margin: 1rem 0;
+  }
+
+  .cta {
+    margin-top: 48px;
+  }
+}
+
+.home-about-logo {
+  width: 280px;
+  justify-self: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+@import './aboutLogos';

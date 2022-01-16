@@ -38,8 +38,8 @@ $text = get_sub_field('text');
 <?php endwhile; ?>
 <?php endif; ?>
 
-<?php if( have_rows('blog') ):
-while( have_rows('blog') ): the_row(); 
+<?php if( have_rows('mission') ):
+while( have_rows('mission') ): the_row(); 
 
 $first_title = get_sub_field('first_title');
 $first_text = get_sub_field('first_text');
