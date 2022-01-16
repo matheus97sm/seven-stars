@@ -5,6 +5,9 @@
   outline: none;
   -webkit-font-smoothing: antialiased; }
 
+body {
+  background-color: #221C1C; }
+
 ul,
 ol,
 li {

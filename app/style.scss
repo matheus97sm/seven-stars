@@ -6,6 +6,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background-color: #221C1C;
+}
+
 ul,
 ol,
 li {
@@ -15,6 +19,8 @@ li {
 a {
   text-decoration: none;
 }
+
+
 
 @import './scss/header/header';
 @import './scss/footer/footer';
