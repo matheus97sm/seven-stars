@@ -21,10 +21,10 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
       <div class="faq-question">
-        <h3>
+        <h4>
           <span><?=the_title()?></span>
-          <div></div>
-        </h3>
+          <img src="<?=get_template_directory_URI()?>/img/src/arrow.svg" alt="alt" />
+        </h4>
         
         <div class="faq-question-text">
           <?=the_content()?>

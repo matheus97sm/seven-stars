@@ -6,7 +6,7 @@ export default function reviews() {
   const buttonLeft = document.querySelector('.reviews-left');
   const buttonRight = document.querySelector('.reviews-right');
   const carouselInfo = {
-    reviewWrapperWidthSize: reviewWrapper.getBoundingClientRect().width,
+    reviewWrapperWidthSize: !!reviewWrapper && reviewWrapper.getBoundingClientRect().width,
     actualReview: 0,
     mouseHover: false
   };

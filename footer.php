@@ -77,7 +77,5 @@
 <script src="<?=get_template_directory_URI()?>/app/app.js"></script>
 
 <?php wp_footer(); ?>
-
 </body>
-
 </html>

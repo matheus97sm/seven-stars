@@ -1,0 +1,20 @@
+.about {
+  padding: 64px 0;
+
+  .container {
+    display: grid;
+    gap: 64px;
+  }
+}
+
+.about-text div p {
+  margin: 1.5rem 0;
+}
+
+.about-img {
+  display: grid;
+  gap: 64px;
+  justify-items: center;
+}
+
+@import './mission';

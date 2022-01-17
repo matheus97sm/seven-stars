@@ -43,7 +43,7 @@ $text = get_sub_field('text');
       <a href="<?=the_permalink()?>" class="services-item fadeUp" data-animar>
         <img src="<?=catch_that_image(2)?>" alt="<?=the_title()?>" />
         
-        <h5><?=the_title()?></h5>
+        <h3><?=the_title()?></h3>
       </a>
 
       <?php endwhile; ?>

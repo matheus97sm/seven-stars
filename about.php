@@ -53,17 +53,17 @@ $third_text = get_sub_field('third_text');
     <img src="<?=get_template_directory_URI()?>/img/src/about_rocket.svg" alt="Seven Stars | We go beyond" />
 
     <div class="mission-card">
-      <h4><?=$first_title?></h4>
+      <h3><?=$first_title?></h3>
       <p><?=$first_text?></p>
     </div>
     
     <div class="mission-card">
-      <h4><?=$second_title?></h4>
+      <h3><?=$second_title?></h3>
       <p><?=$second_text?></p>
     </div>
     
     <div class="mission-card">
-      <h4><?=$third_title?></h4>
+      <h3><?=$third_title?></h3>
       <p><?=$third_text?></p>
     </div>
   </div>

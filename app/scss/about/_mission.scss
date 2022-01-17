@@ -1,0 +1,27 @@
+.mission {
+  width: 100%;
+  padding: 64px 0 64px;
+
+  .container {
+    position: relative;
+    display: grid;
+    gap: 64px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.2;
+      z-index: -1;
+    }
+  }
+}
+
+.mission-card h3 {
+  margin-bottom: 1rem;
+  color: $cian;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: .4rem;
+}
