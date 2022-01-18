@@ -18,10 +18,37 @@
   }
 }
 
-.mission-card h3 {
-  margin-bottom: 1rem;
-  color: $cian;
-  font-size: 1.5rem;
-  font-weight: normal;
-  letter-spacing: .4rem;
+.mission-card {
+  max-width: 500px;
+
+  h3 {
+    margin-bottom: 1rem;
+    color: $cian;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: .4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mission .container img {
+    position: absolute;
+    top: -60px;
+    left: unset;
+    right: 520px;
+    width: 380px;
+    opacity: 1;
+  }
+
+  .mission-card {
+    justify-self: flex-end;
+
+    &:nth-of-type(2) {
+      margin-right: 128px;
+    }
+
+    &:nth-of-type(3) {
+      margin-right: 256px;
+    }
+  }
 }

@@ -99,3 +99,11 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .blog-card {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 64px;
+  }
+}

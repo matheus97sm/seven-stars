@@ -62,6 +62,7 @@
     gap: 6px;
     flex-direction: column;
     justify-self: flex-end;
+    cursor: pointer;
   
     span, 
     &::after {
@@ -76,6 +77,24 @@
       content: '';
       width: 100%;
       transform: rotate(-45deg) translate3d(2px, -3px, 0);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    ul li a {
+      font-size: 3.5rem;
+    }
+
+    .menu-logo {
+      align-self: flex-end;
+      width: 280px;
     }
   }
 }

@@ -10,14 +10,14 @@ export default function openMenu() {
     e.preventDefault();
 
     menu.classList.add('active');
-    window.document.body.style.setProperty('overflow', 'hidden');
+    window.document.body.style.setProperty('overflow-y', 'hidden');
   });
 
   closeButton.addEventListener('click', e => {
     e.preventDefault();
 
     menu.classList.remove('active');
-    window.document.body.style.setProperty('overflow', 'scroll');
+    window.document.body.style.setProperty('overflow-y', 'scroll');
   });
 
   window.addEventListener('scroll', e => {

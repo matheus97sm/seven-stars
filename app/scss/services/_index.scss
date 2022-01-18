@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .services-text {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .services-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

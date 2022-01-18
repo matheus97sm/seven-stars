@@ -8,3 +8,20 @@
     justify-items: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .home-about-logos .container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .home-about-logos .container {
+    gap: 96px;
+  }
+}

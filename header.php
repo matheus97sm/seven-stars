@@ -97,7 +97,7 @@
   </nav>
 
   <?php if (!is_front_page()) { ?>
-    <div class="inside-banner" style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.jpg')">
+    <div class="inside-banner" style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.png')">
       <div class="container">
         <?php if (get_post_type(get_the_ID()) == 'page') { ?>
         <h1 class="fadeDown" data-anima-tempo><?=the_title()?></h1>

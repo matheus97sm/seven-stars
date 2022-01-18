@@ -18,4 +18,10 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-header img {
+    width: 200px;
+  }
+}
+
 @import './info';

@@ -5,6 +5,10 @@
   .container {
     display: grid;
     gap: 64px;
+
+    .cta {
+      justify-self: center;
+    }
   }
 }
 
@@ -129,6 +133,28 @@
       left: unset;
       right: 5%;
       width: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-blog-card {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-blog {
+    padding: 256px 0 128px;
+  
+    .container {
+      gap: 128px;
+
+      .cta {
+        margin-top: 64px;
+      }
     }
   }
 }

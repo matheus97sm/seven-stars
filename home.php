@@ -16,7 +16,7 @@ $text = get_sub_field('text');
 $button_name = get_sub_field('button_name');
 $button_link = get_sub_field('button_link');
 ?>
-<section class="home-banner" style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.jpg')">
+<section class="home-banner" style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.png')">
   <div class="container">
     <div class="home-banner-text">
       <h1><?=$title?></h1>
