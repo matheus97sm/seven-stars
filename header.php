@@ -61,17 +61,17 @@
   <header class="header <?php if (is_front_page()) echo 'home-header' ?>" data-anima-tempo>
     <div class="container">
       <div class="header-midia">
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://instagram.com/seven_stars_luxury_cleaning?utm_medium=copy_link" target="_blank">
           <svg width="32" height="32" viewBox="0 0 32 32">
             <use xlink:href="#instagram"></use>
           </svg> 
         </a>
 
-        <a href="https://www.facebook.com/" target="_blank">
+        <!-- <a href="https://www.facebook.com/" target="_blank">
           <svg width="32" height="32" viewBox="0 0 32 32">
             <use xlink:href="#facebook"></use>
           </svg> 
-        </a>
+        </a> -->
       </div>
 
       <a href="<?=site_url()?>" class="logo-header">
