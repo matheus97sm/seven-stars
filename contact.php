@@ -9,7 +9,4 @@
 get_header(); ?>
 
 
-// NOVO SITE :)
-
-
 <?php get_footer();
