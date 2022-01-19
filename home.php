@@ -138,7 +138,7 @@ $button_link = get_sub_field('button_link');
       ?>
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
 
-      <a href="<?=the_permalink()?>" class="home-services-item fadeUp" data-animar>
+      <a href="<?=the_permalink()?>" class="home-services-item">
         <svg width="32" height="32" viewBox="0 0 32 32">
           <use xlink:href="#rocket"></use>
         </svg>
