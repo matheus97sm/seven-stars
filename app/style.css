@@ -934,6 +934,7 @@ p {
       background-color: transparent;
       border: none;
       border-bottom: 1px solid #fff;
+      color: #fff;
       font-size: 1rem; }
       .footer-info form input:not([type="submit"])::placeholder,
       .footer-info form textarea::placeholder,
