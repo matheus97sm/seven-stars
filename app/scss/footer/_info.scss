@@ -31,6 +31,10 @@
       }
     }
 
+    option {
+      color: $black;
+    }
+
     input[type="submit"] {
       min-width: 260px;
       margin-top: 16px;

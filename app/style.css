@@ -941,6 +941,8 @@ p {
       .footer-info form select::placeholder {
         color: #fff;
         opacity: 0.8; }
+    .footer-info form option {
+      color: #221c1c; }
     .footer-info form input[type="submit"] {
       min-width: 260px;
       margin-top: 16px;
