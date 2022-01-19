@@ -34,17 +34,17 @@
         <h5>Contact</h5>
 
         <div class="footer-contact-info">
-          <a href="tel:555555555" target="_blank">
+          <a href="tel:(646)2360560" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#tel"></use>
             </svg> 
-            <span>555555555</span>
+            <span>(646) 236 0560</span>
           </a>
-          <a href="mailto:contact@sevenstars.com" target="_blank">
+          <a href="mailto:info.sevenstarsluxury@gmail.com" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#mail"></use>
             </svg> 
-            <span>contact@sevenstars.com</span>
+            <span>info.sevenstarsluxury@gmail.com</span>
           </a>
         </div>
 
@@ -65,7 +65,7 @@
     </div>
 
     <div class="rodape">
-      <p>Copyright © www.sevenstars.com 2022. All rights reserved.</p>
+      <p>Copyright © www.sevenstarsluxurycleaning.com 2022. All rights reserved.</p>
     </div>
   </div>
 </footer>

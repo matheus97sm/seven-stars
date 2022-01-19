@@ -58,7 +58,7 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <header class="header">
+  <header class="header <?php if (is_front_page()) echo 'home-header' ?>" data-anima-tempo>
     <div class="container">
       <div class="header-midia">
         <a href="https://www.instagram.com/" target="_blank">

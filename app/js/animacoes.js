@@ -3,13 +3,13 @@ export default function animacoes() {
 
   animaItem.forEach(item => {
     if (item.getBoundingClientRect().top < window.innerHeight)
-      return item.classList.add("animar");
+      return item.classList.add("anime");
 
     window.addEventListener("scroll", e => {
       const distTop = window.innerHeight * 0.85;
 
       if (item.getBoundingClientRect().top < distTop)
-        item.classList.add("animar");
+        item.classList.add("anime");
     });
   });
 
@@ -17,7 +17,7 @@ export default function animacoes() {
 
   window.setTimeout(() => {
     animarComTempo.forEach(item => {
-      item.classList.add("animar");
+      item.classList.add("anime");
     });
   }, 500);
 }

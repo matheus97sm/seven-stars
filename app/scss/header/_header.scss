@@ -6,6 +6,10 @@
   padding: 1rem 0;
   z-index: 999;
   transition: .3s background-color;
+  
+  &.home-header {
+    animation: 4s animationHeader forwards;
+  }
 
   &.active {
     background-color: $black;
@@ -70,6 +74,18 @@
 
   .logo-header img {
     width: 180px;
+  }
+}
+
+@keyframes animationHeader {
+  0%, 80% {
+    transform: translate3d(0, -32px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 

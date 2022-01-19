@@ -16,12 +16,12 @@ $text = get_sub_field('text');
 $button_name = get_sub_field('button_name');
 $button_link = get_sub_field('button_link');
 ?>
-<section class="home-banner" style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.png')">
+<section class="home-banner" data-anima-tempo style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.png')">
   <div class="container">
     <div class="home-banner-text">
-      <h1><?=$title?></h1>
-      <p><?=$text?></p>
-      <a href="<?=$button_link?>" class="cta cta-blue"><?=$button_name?></a>
+      <h1 data-anima-tempo><?=$title?></h1>
+      <p data-anima-tempo><?=$text?></p>
+      <a data-anima-tempo href="<?=$button_link?>" class="cta cta-blue"><?=$button_name?></a>
     </div>
   </div>
 

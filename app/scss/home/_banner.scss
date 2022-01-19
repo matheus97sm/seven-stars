@@ -5,7 +5,12 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
   z-index: 1;
+  
+  &.anime {
+    animation: 4s animationBanner forwards;
+  }
 
   .container {
     height: 100%;
@@ -43,15 +48,36 @@
     font-size: 3rem;
     font-weight: bolder;
     text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+
+    &.anime {
+      animation: 4s animationText forwards;
+    }
   }
 
   p {
     font-size: 1.5rem;
     margin: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+
+    &.anime {
+      animation: 4s animationText forwards;
+      animation-delay: .5s;
+    }
   }
 
   .cta {
     margin-top: 2rem;
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+
+    &.anime {
+      animation: 4s animationText forwards;
+      animation-delay: 1s;
+    }
   }
 }
 
@@ -74,5 +100,27 @@
     width: 100vw;
     height: 100%;
     background-size: contain;
+  }
+}
+
+@keyframes animationBanner {
+  0% {
+    opacity: 0;
+  }
+
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationText {
+  0%, 50% {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+  }
+
+  80%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

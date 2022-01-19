@@ -27,8 +27,16 @@
     line-height: 1.5rem;
   }
 
-  p, ul, ol {
+  p, 
+  ul, 
+  ol {
     margin: 1rem 0;
+  }
+
+  ul, 
+  ol, 
+  li {
+    list-style: disc;
   }
 
   h1,
@@ -38,5 +46,15 @@
   h5,
   h6 {
     color: $black;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .content-img {
+    height: 480px;
   }
 }

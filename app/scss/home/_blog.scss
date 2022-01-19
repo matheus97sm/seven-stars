@@ -6,7 +6,7 @@
     display: grid;
     gap: 64px;
 
-    .cta {
+    > .cta {
       justify-self: center;
     }
   }
@@ -156,5 +156,9 @@
         margin-top: 64px;
       }
     }
+  }
+
+  .home-blog-img .home-blog-img-wrapper {
+    margin-top: 0;
   }
 }
