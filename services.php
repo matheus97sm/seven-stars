@@ -40,7 +40,7 @@ $text = get_sub_field('text');
       ?>
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
 
-      <a href="<?=the_permalink()?>" class="services-item fadeUp" data-animar>
+      <a href="<?=the_permalink()?>" class="services-item">
         <img src="<?=catch_that_image(2)?>" alt="<?=the_title()?>" />
         
         <h3><?=the_title()?></h3>
