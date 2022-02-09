@@ -46,15 +46,16 @@
             </svg> 
             <span>info.sevenstarsluxury@gmail.com</span>
           </a>
-        </div>
 
-        <div class="footer-contact-social">
           <a href="https://instagram.com/seven_stars_luxury_cleaning?utm_medium=copy_link" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#instagram"></use>
             </svg> 
+            <span>@seven_stars_luxury_cleaning</span>
           </a>
-          
+        </div>
+
+        <div class="footer-contact-social">
           <!-- <a href="https://facebook.com" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#facebook"></use>
