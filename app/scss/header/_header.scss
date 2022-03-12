@@ -32,6 +32,10 @@
     width: 16px;
     height: 16px;
   }
+
+  .cta {
+    display: none;
+  }
 }
 
 .logo-header {
@@ -49,8 +53,8 @@
   justify-content: center;
   align-items: flex-end;
   gap: 6px;
-  flex-direction: column;
   justify-self: flex-end;
+  flex-direction: column;
   cursor: pointer;
 
   span, 
@@ -64,6 +68,29 @@
   &::after {
     content: '';
     width: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-midia .cta {
+    min-width: unset;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+
+    font-size: 11px;
+
+    &:hover svg {
+      fill: $black;
+    }
+
+    svg {
+      width: 11px;
+      height: 11px;
+
+      fill: $yellow;
+      transition: .3s fill;
+    }
   }
 }
 

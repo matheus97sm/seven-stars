@@ -67,11 +67,12 @@
           </svg> 
         </a>
 
-        <!-- <a href="https://www.facebook.com/" target="_blank">
+        <a href="tel:(646)2360560" target="_blank" class="cta cta-yellow">
           <svg width="32" height="32" viewBox="0 0 32 32">
-            <use xlink:href="#facebook"></use>
+            <use xlink:href="#tel"></use>
           </svg> 
-        </a> -->
+          <span>(646) 236 0560</span>
+        </a>
       </div>
 
       <a href="<?=site_url()?>" class="logo-header">

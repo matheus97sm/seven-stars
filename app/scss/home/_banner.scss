@@ -7,6 +7,37 @@
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 1;
+
+  > .cta {
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    min-width: unset;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+
+    font-size: 11px;
+
+    &.anime {
+      animation: 4s animationText forwards;
+    }
+
+    &:hover svg {
+      fill: $black;
+    }
+
+    svg {
+      width: 11px;
+      height: 11px;
+
+      fill: $yellow;
+      transition: .3s fill;
+    }
+  }
   
   &.anime {
     animation: 4s animationBanner forwards;
@@ -92,6 +123,12 @@
   background-size: cover;
   opacity: 0.1;
   z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .home-banner .cta {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1050px) {

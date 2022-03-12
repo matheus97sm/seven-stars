@@ -17,6 +17,13 @@ $button_name = get_sub_field('button_name');
 $button_link = get_sub_field('button_link');
 ?>
 <section class="home-banner" data-anima-tempo style="background-image: url('<?=get_template_directory_URI()?>/img/src/banner.png')">
+  <a href="tel:(646)2360560" target="_blank" class="cta cta-yellow" data-anima-tempo>
+    <svg width="32" height="32" viewBox="0 0 32 32">
+      <use xlink:href="#tel"></use>
+    </svg> 
+    <span>(646) 236 0560</span>
+  </a>
+
   <div class="container">
     <div class="home-banner-text">
       <h2 data-anima-tempo><?=$title?></h2>
